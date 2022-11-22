@@ -1,0 +1,17 @@
+#rps_result {
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#photo {
+    width: 200px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
