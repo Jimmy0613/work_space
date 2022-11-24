@@ -3,7 +3,6 @@ var player_result;
 var game_result;
 var com;
 
-var str_result;
 var img_result_com;
 var img_result_player;
 window.onload = function(){
