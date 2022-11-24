@@ -14,23 +14,23 @@ for (var i = 0; i < player.length; i++) {
             break;
         } else if (i==1){
             if (player[0] == player[1]){
-                alert("중복된 숫자가 있습니다. 다시 입력하세요.");
+                alert("이미 입력한 숫자입니다. 다시 입력하세요.");
             } else break;
         } else if (i==2){
-            if (player[0] == player[1] || player[0] == player[2] || player[1] == player[2]){
-                alert("중복된 숫자가 있습니다. 다시 입력하세요.");
+            if (player[0] == player[2] || player[1] == player[2]){
+                alert("이미 입력한 숫자입니다. 다시 입력하세요.");
             } else break;
         } else if (i==3){
-            if (player[0] == player[1] || player[0] == player[2] || player[0] == player[3] || player[1] == player[2] || player[1] == player[3] || player[2] == player[3]){
-                alert("중복된 숫자가 있습니다. 다시 입력하세요.");
+            if (player[0] == player[3] || player[1] == player[3] || player[2] == player[3]){
+                alert("이미 입력한 숫자입니다. 다시 입력하세요.");
             } else break;
         } else if (i==4){
-            if (player[0] == player[1] || player[0] == player[2] || player[0] == player[3] || player[0] == player[4] || player[1] == player[2] || player[1] == player[3] || player[1] == player[4] || player[2] == player[3] || player[2] == player[4] || player[3] == player[4]){
-                alert("중복된 숫자가 있습니다. 다시 입력하세요.");
+            if (player[0] == player[4] || player[1] == player[4] || player[2] == player[4] || player[3] == player[4]){
+                alert("이미 입력한 숫자입니다. 다시 입력하세요.");
             } else break;
         } else if (i==5){
-            if (player[0] == player[1] || player[0] == player[2] || player[0] == player[3] || player[0] == player[4] || player[0] == player[5] || player[1] == player[2] || player[1] == player[3] || player[1] == player[4] || player[1] == player[5] || player[2] == player[3] || player[2] == player[4] || player[2] == player[5] || player[3] == player[4] || player[3] == player[5] || player[4] == player[5]) {
-                alert("중복된 숫자가 있습니다. 처음부터 다시 입력하세요.");
+            if (player[0] == player[5] || player[1] == player[5] || player[2] == player[5] || player[3] == player[5] || player[4] == player[5]) {
+                alert("이미 입력한 숫자입니다. 다시 입력하세요.");
             } else break;
         }
     }
