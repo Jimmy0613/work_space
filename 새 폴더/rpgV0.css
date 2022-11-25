@@ -1,0 +1,83 @@
+body {
+   height: 1000px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   background-color: papayawhip;
+}
+#box {
+    width: 700px;
+    height: 650px;
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 500px 50px 100px;
+}
+
+
+#system {
+    width: 700px;
+    height: 500px;
+    background-color: black;
+    color: white;   
+}
+
+#object {
+    width: 700px;
+    height: 50px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.monstersHostile {
+    background-color: darkred;
+    color: white;
+}
+.monstersNone {
+    background-color: darkcyan;
+    color: white;
+}
+#bottom {
+    width: 700px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 500px 200px;
+}
+#player {
+    width: 500px;
+    height: 100px;
+    background-color: skyblue;
+    color: white;
+    display: grid;
+    grid-template-rows: 40px 30px 20px;
+}
+#info {
+    width: 500px;
+    height: 40px;
+    background-color: skyblue;
+    color: white;
+}
+#bag {
+    width: 500px;
+    height: 30px;
+    background-color: darkslategrey;
+    color: white;
+}
+#exp {
+    width: 500px;
+    height: 20px;
+    background-color: limegreen;
+    color: white;
+}
+#control {
+    width: 200px;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 50px 50px;
+}
+
+#c1{
+    background-color: palevioletred;
+}
+#c2{
+    background-color: palevioletred;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="rpgV0.css">
+    <script src="Function_test.js"></script>
+    <script src="Battle.js"></script>
+    <script src="Display_test.js"></script>
+    <script src="Room_functions.js"></script>
+    <script src="Room_test.js"></script>
+    <script src="Move_test.js"></script>
+    <script src="Monster_test.js"></script>
+    <script src="Character_test.js"></script>
+    <script src="index_test.js"></script>
+</head>
+
+<body>
+    <div id="box">
+            <textarea id="system"></textarea>
+            <div id="object"></div>
+            <div id="bottom">
+            <div id="player">
+                <textarea id="info"></textarea>
+                <textarea id="bag"></textarea>
+                <textarea id="exp"></textarea>
+            </div>
+            <div id="control">
+                <div id="c1">
+                    <button type="button" onclick="move('동')">동</button>
+                    <button type="button" onclick="move('서')">서</button>
+                    <button type="button" onclick="move('남')">남</button>
+                    <button type="button" onclick="move('북')">북</button>
+                    <button type="button" onclick="move('위')">올라가기</button>
+                    <button type="button" onclick="move('아래')">내려가기</button>
+                </div>
+                <div id="c2">
+                    <input id="input_turn" value="1" readonly="readonly">
+                    <button type="button" onclick="go()">턴 진행</button>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
