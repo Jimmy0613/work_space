@@ -1,0 +1,17 @@
+input pattern 정규표현식 모음
+
+1. 숫자만
+<input type="text" name="patternValue" pattern"\d*">
+<input type="text" name="patternValue" pattern="^[0-9]+$">
+
+2. 영문 대소문자만
+<input type="text" name="patternValue" pattern="^[a-zA-z]+$">
+
+3. 영문 대소문자만 (띄어쓰기 및 공백 가능)
+<input type="text" name="patternValue" pattern="^[a-zA-Z\s]+$">
+
+4. 숫자, 영문 대소문자만
+<input type="text" name="patternValue" pattern="^[a-zA-Z0-9]+$">
+
+5. 최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함(암호 유효성 검사에 유용)
+<input type="text" name="patternValue" pattern="^?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$">
