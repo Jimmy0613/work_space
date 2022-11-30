@@ -6,9 +6,9 @@ public class Rps02 {
 
 	public static void main(String[] args) {
 
-		while (true) {
+		Scanner sc = new Scanner(System.in);
 
-			Scanner sc = new Scanner(System.in);
+		while (true) {
 
 			System.out.println("가위, 바위, 보를 입력하세요.(종료: 0)"); // 입력 받음 (0 입력시 종료)
 			String input = sc.next();
@@ -17,10 +17,10 @@ public class Rps02 {
 
 				if (input.equals("가위") || input.equals("바위") || input.equals("보")) {
 					break;
-				} else if (input.equals("0")) { 
+				} else if (input.equals("0")) {
 					break;
 				} else {
-					System.out.println("가위, 바위, 보 중 하나를 입력해주세요.(종료: 0)"); //예외 처리 중에도 종료 가능
+					System.out.println("가위, 바위, 보 중 하나를 입력해주세요.(종료: 0)"); // 예외 처리 중에도 종료 가능
 				}
 				input = sc.next();
 
@@ -51,7 +51,7 @@ public class Rps02 {
 			System.out.println("컴: " + comStr);
 
 			switch (input) {
-			
+
 			case "가위":
 				if (comStr.equals("바위")) {
 					System.out.println("결과: 졌습니다!");
@@ -84,5 +84,6 @@ public class Rps02 {
 			}
 
 		}
+		sc.close();
 	}
 }
