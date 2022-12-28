@@ -9,7 +9,7 @@
 <body>
 <h1>로그인</h1>
 <hr>
-<form action="loginProc.jsp" method="get">
+<form action="proc/loginProc.jsp" method="get">
 * 아이디: <input name="id"><br>
 * 비밀번호: <input name="pw"><br>
 <input type="submit" value="로그인">

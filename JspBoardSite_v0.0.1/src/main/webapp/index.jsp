@@ -10,25 +10,25 @@
 <body>
 	<%
 	DataUpdate du = new DataUpdate();
-		String memberInfo = du.updateTopMenu();
+			String memberInfo = du.loginInfo();
 	%>
 	👻 게시판 HOME 👻
 	<hr>
-	❤🖤❤ [ <a href="board.jsp">게시판</a> | 
+	❤🖤❤ [ <a href="board/board.jsp">게시판</a> | 
 	<% if(DataUpdate.loginId.equals("")){
 		 %>
-	  <a href="login.jsp"> 로그인 </a> |	<a href="joinMem.jsp"> 회원가입 </a> ]
+	  <a href="login.jsp"> 로그인 </a> |	<a href="join.jsp"> 회원가입 </a> ]
 	<%
 	} else{
 		
 	%>
-	[ <a href="logoutProc.jsp"> 로그아웃 </a> ]
+	[ <a href="proc/logoutProc.jsp"> 로그아웃 </a> ]
 	<%
 	}
 	%>
 	❤🖤❤
 	<hr>
-	[ 🍒 회원정보 🍒 ]
+	
 	<%=memberInfo%>
 	<hr>
 	❤🖤❤ [ 📢 공지사항 📢 ] ❤🖤❤

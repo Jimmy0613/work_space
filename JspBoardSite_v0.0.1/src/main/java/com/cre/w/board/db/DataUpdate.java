@@ -8,6 +8,7 @@ import java.sql.Statement;
 public class DataUpdate {
 	public static String loginId = "";
 	public static String loginGrade = "";
+	public static String loginNickname = "";
 
 	Connection con = null;
 	Statement st = null;
@@ -29,13 +30,19 @@ public class DataUpdate {
 		dbExecuteUpdate(query);
 	}
 
-	public String updateTopMenu() {
-		String loginInfo = "";
+	public String loginInfo() {
+		String loginInfo = "[ 🍒 회원정보 🍒 ]";
 		if (loginId.equals("")) {
-			loginInfo = "로그인해주세요.";
+			loginInfo += " 로그인해주세요.";
 		} else {
-			loginInfo = loginId + "님 (등급: " + loginGrade + ")";
+			loginInfo += " " + loginNickname + "(" + loginId + ")님 (등급: " + loginGrade + ")";
 		}
 		return loginInfo;
+	}
+	
+	public void updateHit(String postNum) {
+		String query;
+		query = "update board_p set hit = hit + 1 where p_num =" + postNum;
+		dbExecuteUpdate(query);
 	}
 }
